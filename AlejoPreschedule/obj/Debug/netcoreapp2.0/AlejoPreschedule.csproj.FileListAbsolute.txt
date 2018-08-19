@@ -1,0 +1,12 @@
+C:\Users\ASUS\Desktop\Mvc\VmApp\AlejoPreschedule\bin\Debug\netcoreapp2.0\AlejoPreschedule.deps.json
+C:\Users\ASUS\Desktop\Mvc\VmApp\AlejoPreschedule\bin\Debug\netcoreapp2.0\AlejoPreschedule.runtimeconfig.json
+C:\Users\ASUS\Desktop\Mvc\VmApp\AlejoPreschedule\bin\Debug\netcoreapp2.0\AlejoPreschedule.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\Mvc\VmApp\AlejoPreschedule\bin\Debug\netcoreapp2.0\AlejoPreschedule.dll
+C:\Users\ASUS\Desktop\Mvc\VmApp\AlejoPreschedule\bin\Debug\netcoreapp2.0\AlejoPreschedule.pdb
+C:\Users\ASUS\Desktop\Mvc\VmApp\AlejoPreschedule\obj\Debug\netcoreapp2.0\AlejoPreschedule.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\Mvc\VmApp\AlejoPreschedule\obj\Debug\netcoreapp2.0\AlejoPreschedule.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Mvc\VmApp\AlejoPreschedule\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\ASUS\Desktop\Mvc\VmApp\AlejoPreschedule\obj\Debug\netcoreapp2.0\AlejoPreschedule.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\Mvc\VmApp\AlejoPreschedule\obj\Debug\netcoreapp2.0\AlejoPreschedule.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\Mvc\VmApp\AlejoPreschedule\obj\Debug\netcoreapp2.0\AlejoPreschedule.dll
+C:\Users\ASUS\Desktop\Mvc\VmApp\AlejoPreschedule\obj\Debug\netcoreapp2.0\AlejoPreschedule.pdb

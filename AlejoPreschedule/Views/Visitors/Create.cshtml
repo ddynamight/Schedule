@@ -1,0 +1,177 @@
+﻿@model Preschedule.Models.Schedule
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  
+</head>
+<body class="grey lighten-3">
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+       
+        <!-- Navbar -->
+        <!-- Sidebar -->
+        <div class="sidebar-fixed position-fixed">
+
+            <a class="logo-wrapper waves-effect">
+                <img src="img\logo.png" class="img-fluid" alt="">
+            </a>
+
+            <div class="list-group list-group-flush">
+                <a href="index.html" class="list-group-item active waves-effect">
+                    <i class="fa fa-users mr-3" aria-hidden="true"></i>Preschedule visitors
+                </a>
+                <a href="Upcoming.html" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-user-plus mr-3" aria-hidden="true"></i>Upcoming visitors
+                </a>
+                <a href="history.html" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-history mr-3" aria-hidden="true"></i>History
+                </a>
+
+            </div>
+
+        </div>
+        <!-- Sidebar -->
+
+    </header>
+    <!--Main Navigation-->
+    <!--Main layout-->
+    <main class="pt-5 mx-lg-5">
+        <div class="container-fluid mt-5">
+            <div class="card col-md-6" style="margin: 0 auto">
+                <div class="card-body">
+                    <div class="" style="margin: 0 auto">
+                        <form method="post">
+                            <div class="form-group">
+                                <label asp-for="Name" class="control-label"></label>
+                                <input asp-for="Name" class="form-control" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Email" class="control-label"></label>
+                                <input asp-for="Email" class="form-control" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="PhoneNumber" class="control-label"></label>
+                                <input asp-for="PhoneNumber" class="form-control" />
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Address" class="control-label"></label>
+                                <input asp-for="Address" class="form-control" />
+                                <span asp-validation-for="Address" class="text-danger"></span>
+                            </div>
+                            @*<div class="input-group mb-3" id="purpose">
+                                <label asp-for="Purpose" class="control-label"></label>
+                                <select class="form-control" name="purpose" id="inputGroupSelect01">
+                                    <option value="meeting">Meeting</option>
+                                    <option value="event">Event</option>
+                                    <option value="pickup">Pickup/Delivery</option>
+                                </select>
+                                <span asp-validation-for="Purpose" class="text-danger"></span>
+                            </div>*@
+                            <div class="input-group mb-3" id="purpose">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Purpose</label>
+                                </div>
+                                <select class="form-control" name="Purpose" id="inputGroupSelect01">
+                                    <option value="meeting">Meeting</option>
+                                    <option value="event">Event</option>
+                                    <option value="pickup">Pickup/Delivery</option>
+                                </select>
+                            </div>
+                            <div class="form-group show1">
+                                <label asp-for="FromWhere" class="control-label">Name of Company</label>
+                                <input asp-for="FromWhere" class="form-control" />
+                                <span asp-validation-for="FromWhere" class="text-danger"></span>
+                            </div>
+                            <div class="form-group show1">
+                                <label asp-for="ToWhom" class="control-label">Whom to See</label>
+                                <input asp-for="ToWhom" class="form-control" />
+                                <span asp-validation-for="ToWhom" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary show1">Check In</button>
+
+                        <!--hidden part of the form-->
+                       
+                            <div class="form-group show2">
+                                <label asp-for="Name_of_company" class="control-label">Name of Company</label>
+                                <input asp-for="Name_of_company" class="form-control" />
+                                <span asp-validation-for="Name_of_company" class="text-danger"></span>
+                            </div>
+                            <div class="form-group show2">
+                                <label asp-for="Name_of_event" class="control-label">Name of Event</label>
+                                <input asp-for="Name_of_event" class="form-control" />
+                                <span asp-validation-for="Name_of_event" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary show2">Check In</button>
+
+          
+                        
+                            <div class="form-group show3">
+                                <label asp-for="From_Where" class="control-label">From Where</label>
+                                <input asp-for="From_Where" class="form-control" />
+                                <span asp-validation-for="From_Where" class="text-danger"></span>
+                            </div>
+                            <div class="form-group show3">
+                                <label asp-for="To_Whom" class="control-label">To Whom</label>
+                                <input asp-for="To_Whom" class="form-control" />
+                                <span asp-validation-for="To_Whom" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary show3">Check In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script type="text/javascript" src="~/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="~/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="~/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="~/js/mdb.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+        $('select[name="Purpose"]').on('change', function () {
+            if ($(this).val() == "event") {
+                $('.show1').hide();
+                $('.show3').hide();
+                $('.show2').show();
+            } else if ($(this).val() == "pickup") {
+                $('.show1').hide();
+                $('.show2').hide();
+                $('.show3').show();
+
+            } else {
+                $('.show1').show();
+                $('.show2').hide();
+                $('.show3').hide();
+            }
+        });
+    </script>
+}
